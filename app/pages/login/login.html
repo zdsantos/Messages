@@ -7,13 +7,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+  <img src="http://placehold.it/300x100">
 
   <form>
     <ion-item>
@@ -26,11 +26,19 @@
       <ion-input type="password"></ion-input>
     </ion-item>
 
-    <button block padding (click)="onLogin()">Entrar</button>
+    <button block padding (click)="login()">Entrar</button>
   </form>
 
-  <div padding>
-    <button block padding (click)="onLogin()">Entrar com Facebook</button>
-  </div>
+  <button block padding (click)="loginWithFacebook()">
+    Entrar com Facebook
+  </button>
+
+  <button block clean (click)="signUp()">
+    Criar nova conta
+  </button>
+
+  <button block clean (click)="resetPassword()">
+    Esqueci minha senha
+  </button>
 
 </ion-content>
